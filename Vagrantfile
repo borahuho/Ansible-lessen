@@ -1,5 +1,6 @@
 $useraddscript = <<SCRIPT
-useradd -m student
+useradd -s /bin/bash -c "Ansible testuser" -m student
+echo 'student:Welcome01' | chpasswd
 groupadd operators
 usermod -aG operators student
 usermod -aG sudo student
