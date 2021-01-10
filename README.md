@@ -74,10 +74,14 @@ Remove a VM
 ```
 vagrant destroy
 ```
-ssh in to the VM
+ssh in to the VM with Vagrant
 ```
 vagrant ssh server1
 vagrant ssh server2
 vagrant ssh server3
 ```
-
+ssh with password to the VM
+```
+ssh student@10.13.37.10
+password: Welcome01
+```
